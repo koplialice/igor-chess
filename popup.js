@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <option value="alert2.mp3" ${sound === 'alert2.mp3' ? 'selected' : ''}>Alert2</option>
                 <option value="alert3.mp3" ${sound === 'alert3.mp3' ? 'selected' : ''}>Alert3</option>
                 <option value="alert4.mp3" ${sound === 'alert4.mp3' ? 'selected' : ''}>Alert4</option>
-                <option value="alert4.mp3" ${sound === 'alert5.mp3' ? 'selected' : ''}>Alert4</option>
+                <option value="alert4.mp3" ${sound === 'alert5.mp3' ? 'selected' : ''}>Alert5</option>
                 <option value="alice30.mp3" ${sound === 'alice30.mp3' ? 'selected' : ''}>Alice 30</option>
                 <option value="alice20.mp3" ${sound === 'alice20.mp3' ? 'selected' : ''}>Alice 20</option>
                 <option value="alice10.mp3" ${sound === 'alice10.mp3' ? 'selected' : ''}>Alice 10</option>
