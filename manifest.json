@@ -5,31 +5,31 @@
   "description": "An extension to provide alerts on Chess.com.",
   "permissions": ["storage"],
   "icons": {
-    "48": "images/icon.png"
+     "48": "images/icon.png"
   },
   "content_scripts": [
-    {
-      "matches": ["*://www.chess.com/*"],
-      "js": ["content.js"]
-    }
+     {
+       "matches": ["*://www.chess.com/*"],
+       "js": ["content.js"]
+     }
   ],
   "action": {
-    "default_icon": "images/icon.png",
-    "default_popup": "popup.html"
+     "default_icon": "images/icon.png",
+     "default_popup": "popup.html"
   },
   "web_accessible_resources": [
-    {
-      "resources": [
-        "audio/alert1.mp3",
-        "audio/alert2.mp3",
-        "audio/alert3.mp3",
-        "audio/alert4.mp3",
-        "audio/alert5.mp3",
-        "audio/alice10.mp3",
-        "audio/alice20.mp3",
-        "audio/alice30.mp3"
-      ],
-      "matches": ["<all_urls>"]
-    }
+     {
+       "resources": [
+         "audio/alert1.mp3",
+         "audio/alert2.mp3",
+         "audio/alert3.mp3",
+         "audio/alert4.mp3",
+         "audio/alert5.mp3",
+         "audio/alice10.mp3",
+         "audio/alice20.mp3",
+         "audio/alice30.mp3"
+       ],
+       "matches": ["<all_urls>"]
+     }
   ]
-}
+ }
