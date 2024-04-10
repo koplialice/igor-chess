@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Igor Chess Timer Alert</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            min-width: 360px; 
+        }
+
+        h1 {
+            color: #4A90E2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .alert-time-entry {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #fff; 
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .alert-time-entry > * {
+            margin-right: 10px; 
+        }
+
+        .alert-time, .alert-sound {
+            flex-grow: 1; 
+        }
+
+        .remove-alert-time {
+            cursor: pointer;
+            color: #FF4136;
+            margin-left: auto; 
+            font-size: 16px;
+        }
+
+        #add-alert-time, #save-settings {
+            width: auto; 
+            padding: 10px 20px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px 0; 
+            display: inline-block;
+        }
+
+        #add-alert-time:hover, #save-settings:hover {
+            background-color: #357ABD;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Igor Chess Timer Alert Settings</h1>
+    <div id="alert-times-container">
+    </div>
+    <div class="button-container">
+        <button id="add-alert-time">Add Alert Time</button>
+        <button id="save-settings">Save Settings</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
