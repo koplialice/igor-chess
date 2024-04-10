@@ -1,35 +1,36 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Chess Timer Alert",
   "version": "1.0",
   "description": "An extension to provide alerts on Chess.com.",
   "permissions": ["storage"],
   "icons": {
-     "48": "images/icon.png"
+    "48": "images/icon.png"
   },
   "content_scripts": [
-     {
-       "matches": ["*://www.chess.com/*"],
-       "js": ["content.js"]
-     }
+    {
+      "matches": ["*://www.chess.com/*"],
+      "js": ["content.js"]
+    }
   ],
-  "action": {
-     "default_icon": "images/icon.png",
-     "default_popup": "popup.html"
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "chess-timer-alert@example.com",
+      "strict_min_version": "57.0"
+    }
   },
   "web_accessible_resources": [
-     {
-       "resources": [
-         "audio/alert1.mp3",
-         "audio/alert2.mp3",
-         "audio/alert3.mp3",
-         "audio/alert4.mp3",
-         "audio/alert5.mp3",
-         "audio/alice10.mp3",
-         "audio/alice20.mp3",
-         "audio/alice30.mp3"
-       ],
-       "matches": ["<all_urls>"]
-     }
+    "audio/alert1.mp3",
+    "audio/alert2.mp3",
+    "audio/alert3.mp3",
+    "audio/alert4.mp3",
+    "audio/alert5.mp3",
+    "audio/alice10.mp3",
+    "audio/alice20.mp3",
+    "audio/alice30.mp3"
   ]
- }
+}
