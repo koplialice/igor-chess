@@ -17,10 +17,10 @@
     "default_icon": "images/icon.png",
     "default_popup": "popup.html"
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
-      "id": "chess-timer-alert@example.com",
-      "strict_min_version": "57.0"
+      "id": "{2b4e17c9-aabb-473b-8d13-1f720eec5eca}",
+      "strict_min_version": "79.0"
     }
   },
   "web_accessible_resources": [
