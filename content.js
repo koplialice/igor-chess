@@ -8,7 +8,7 @@ function playAlertSound(soundFile, volume = 0.5) {
 
 function checkTimer() {
   const timerElement = document.querySelector(
-    '.clock-bottom .clock-time-monospace[data-cy="clock-time"]'
+    '.clock-bottom .clock-time-monospace'
   );
   if (timerElement) {
     let timeText = timerElement.textContent.trim();
